@@ -27,7 +27,7 @@ cl.on("guildMemberAdd", (member) => {
       
       setTimeout(() => { 
 
-        cl.channels.get("497066568367341568").send("** Welcome to " + servername + "  **")
+        cl.channels.get("497066568367341568").send("** Welcome to Max.....  **")
         
       }, 3000);
 
