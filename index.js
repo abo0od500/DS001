@@ -9,7 +9,7 @@ var fs = require("fs");
 
 var cl = new discord.Client();
 
-cl("ready", () => {
+cl.on("ready", () => {
 
 console.log("READY");
     
