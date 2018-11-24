@@ -1,4 +1,3 @@
-const TOKEN = "NDgyMzM1OTI1ODY3NjQyODgx.DtrmJQ.oO2bVkaQJpzKidUZU2bbNinWGhY";
 var discord = require("discord.js");
 var request = require('request');
 var inServer = 494448224783040514 ;
@@ -81,4 +80,4 @@ cl.on("guildMemberAdd", (member) => {
 
 
 
-  cl.login(TOKEN);
+  cl.login(process.env.TOKEN);
