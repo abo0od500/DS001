@@ -9,6 +9,12 @@ var fs = require("fs");
 
 var cl = new discord.Client();
 
+cl("ready", () => {
+
+console.log("READY");
+    
+  });
+
 cl.on("guildMemberAdd", (member) => {
 
 
