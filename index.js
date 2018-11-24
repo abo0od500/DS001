@@ -1,6 +1,6 @@
 var discord = require("discord.js");
 var request = require('request');
-var inServer = 494448224783040514 ;
+var inServer = 512728601041305600 ;
 var stringLength = require("string-length");
 
 var fs = require("fs");
@@ -27,12 +27,12 @@ cl.on("guildMemberAdd", (member) => {
       
       setTimeout(() => { 
 
-        cl.channels.get("497066568367341568").send("** Welcome to Max.....  **")
+        cl.channels.get("512729587726417926").send("** Welcome to Max.....  **")
         
       }, 3000);
 
         
-      // console.log(user.tag);
+      console.log(user.tag);
 
     }
 
