@@ -1,6 +1,8 @@
 var discord = require("discord.js");
 var request = require('request');
-var inServer = 512728601041305600 ;
+//var inServer = 512728601041305600 ;
+var inServer = process.env.Server ;
+var inChannel =process.env.Channel ;
 var stringLength = require("string-length");
 
 var fs = require("fs");
@@ -26,8 +28,8 @@ cl.on("guildMemberAdd", (member) => {
     
       
       setTimeout(() => { 
-
-        cl.channels.get("512729587726417926").send("** Welcome to Max.....  **")
+ 
+        cl.channels.get(inChannel).send("** Welcome to " + servername + "  **")
         
       }, 3000);
 
