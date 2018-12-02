@@ -1,5 +1,6 @@
 var discord = require("discord.js");
 var request = require('request');
+var schedule = require('node-schedule');
 var inServer = process.env.Server ;
 var inChannel =process.env.Channel ;
 var stringLength = require("string-length");
@@ -7,11 +8,9 @@ var fs = require("fs");
 var cl = new discord.Client();
 cl.on("ready", () => {
   console.log("READY");
-  var start = Date.now();
-  console.log(start);
-  // var j = schedule.scheduleJob({hour: 6, minute: 00}, function(){
-  //   console.log('Time for tea!');
-  // });
+  var j = schedule.scheduleJob({hour: 1, minute: 15}, function(){
+    console.log('Time for tea!');
+  });
   });
 cl.on("guildMemberAdd", (member) => {
     var server = member.guild.id;
