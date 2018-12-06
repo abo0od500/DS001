@@ -26,7 +26,7 @@ cl.on("guildMemberAdd", (member) => {
     if(server == inServer){
       setTimeout(() => { 
         cl.channels.get(inChannel).send("** Welcome to " + servername + "  **")
-      }, 3000);
+      }, 5000);
     }
   });
   cl.login(process.env.TOKEN);
