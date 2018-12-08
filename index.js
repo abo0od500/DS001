@@ -25,7 +25,7 @@ cl.on("guildMemberAdd", (member) => {
     var user = cl.users.get(member.id); // USER MAP
     if(server == inServer){
       setTimeout(() => { 
-        cl.channels.get(inChannel).send(":max: Welcome to ** MaX **")
+        cl.channels.get(inChannel).send("Welcome to ** MaX **")
       }, 5000);
     }
   });
